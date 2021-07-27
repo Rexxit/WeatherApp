@@ -1,2 +1,2 @@
 # WeatherApp
-A basic weather app that'll show the user the weather for a 7 day week timeline. It'll also recommend the user what type of clothing to wear depending on the weather.
+A basic weather app that'll show the user the current weather for the city they input. It'll also recommend to the user what type of clothing to wear depending on the weather.
