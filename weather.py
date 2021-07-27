@@ -5,6 +5,7 @@ import requests
 # importing time to format date variables
 import time
 
+
 # function to call the API and get all the data I need and convert it to a text and place it on the canvas
 def getWeather(canvas):
     city = textfield.get()
@@ -25,9 +26,12 @@ def getWeather(canvas):
     # Placing the data into a text format
     final_info = condition + "\n" + description + "\n" + str(temp) + "°F"
     final_info = condition + "\n" + description + "\n" + str(temp) + "°F"
-    final_data = "\n" + "Max Temp: " + str(max_temp) + "°F" + "\n" + "Min Temp: " + str(min_temp) + "°F" + "\n" + "Pressure: " \
-                 + str(pressure) + "\n" + "Humidity: " + str(humidity) + "%" + "\n" + "Windspeed: " + str(wind_speed) + " mph" \
-                 + "\n" + "Sunrise: " + str(sunrise) + "am" + "\n" + "Sunset: " + str(sunset) + "pm" + "\n" + "Country: " + str(country)
+    final_data = "\n" + "Max Temp: " + str(max_temp) + "°F" + "\n" + "Min Temp: " + str(
+        min_temp) + "°F" + "\n" + "Pressure: " \
+                 + str(pressure) + "\n" + "Humidity: " + str(humidity) + "%" + "\n" + "Windspeed: " + str(
+        wind_speed) + " mph" \
+                 + "\n" + "Sunrise: " + str(sunrise) + "am" + "\n" + "Sunset: " + str(
+        sunset) + "pm" + "\n" + "Country: " + str(country)
     # Assinging the text strings to the labels from the canvas
     label1.config(text=final_info)
     label2.config(text=final_data)
